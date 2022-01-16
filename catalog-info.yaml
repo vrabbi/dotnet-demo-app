@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: dotnet-core-demo-app
+  description: Demo Dotnet Core App
+  tags:
+    - app-accelerator
+    - dotnet
+    - demo
+    - web
+    - tanzu
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'carto.run/workload-name=dotnet-core'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: team-a
